@@ -1,0 +1,16 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "prepare-function": "npm run test"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "sinon": "^13.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

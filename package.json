@@ -1,0 +1,40 @@
+{
+  "name": "faas-sdk-nodejs",
+  "version": "1.0.0",
+  "description": "faas-sdk-nodejs for writing Node.js functions",
+  "repository": "https://github.com/sber-platformv/faas-sdk-nodejs.git",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "scripts": {
+    "start": "node ./build/src/index.js --source=examples/handlers/handler.js",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "build": "npm run clean && npm run compile",
+    "test": "mocha build/test --recursive"
+  },
+  "author": "SBT",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.1",
+    "@types/semver": "^7.3.9",
+    "@types/supertest": "^2.0.12",
+    "gts": "^3.1.0",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.3",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "minimist": "^1.2.5",
+    "read-pkg-up": "^7.0.1",
+    "semver": "^7.3.5"
+  },
+  "bin": {
+    "faas-sdk-nodejs": "./build/src/index.js"
+  }
+}
