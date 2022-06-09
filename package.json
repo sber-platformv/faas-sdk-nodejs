@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "faas-sdk-nodejs for writing Node.js functions",
   "repository": "https://github.com/sber-platformv/faas-sdk-nodejs.git",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
   "exports": {
-    ".": "./build/index.js"
+    ".": "./build/src/index.js"
   },
   "scripts": {
     "start": "node ./build/src/index.js --source=examples/handlers/handler.js",
@@ -15,6 +15,10 @@
     "build": "npm run clean && npm run compile",
     "test": "mocha build/test --recursive"
   },
+  "files": [
+    "build/src/**/*.js",
+    "build/src/**/*.d.ts"
+  ],
   "author": "SBT",
   "license": "Apache-2.0",
   "devDependencies": {
