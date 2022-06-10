@@ -1,6 +1,6 @@
 {
   "name": "faas-sdk-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "faas-sdk-nodejs for writing Node.js functions",
   "repository": "https://github.com/sber-platformv/faas-sdk-nodejs.git",
   "main": "build/src/index.js",
